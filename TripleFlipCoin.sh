@@ -37,7 +37,7 @@ do
 done 
 PercentageofHead=`echo "scale=2 ;(${FlipCoin[H]}*100)/$user" | bc -l`
 echo "Percentage of Head:"$PercentageofHead
-PercentageofTail=`echo "scale=2 ;(${FlipCoin[T]}*100)/$user" | bc -l`
+PercentageofTail=`echo "scale=2 ;(${FlipCoin[T]}*100)/$user" `
 echo "Percentage of Tail:"$PercentageofTail
 } 
 #LOGIC FOR DOUBLET FLIPCOIN
