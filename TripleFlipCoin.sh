@@ -35,9 +35,9 @@ for key in "${!FlipCoin[@]}"
 do
 	echo "${key}:${FlipCoin[$key]}"
 done 
-PercentageofHead=`echo "scale=2 ;(${FlipCoin[H]}*100)/$user" | bc -l`
+PercentageofHead=`echo "scale=2 ;$(((${FlipCoin[H]}*100)/$user))"`
 echo "Percentage of Head:"$PercentageofHead
-PercentageofTail=`echo "scale=2 ;(${FlipCoin[T]}*100)/$user" `
+PercentageofTail=`echo "scale=2 ;$(((${FlipCoin[T]}*100)/$user))"`
 echo "Percentage of Tail:"$PercentageofTail
 } 
 #LOGIC FOR DOUBLET FLIPCOIN
@@ -70,13 +70,13 @@ do
    echo "${key}:${FlipCoin[$key]}"
 done 
 #PRINTING PERCENTAGE OF DOUBLET FLIPING COIN
-HHPercentage=`echo "scale=2 ;(${FlipCoin[HH]}*100)/($user)" | bc -l`
+HHPercentage=`echo "scale=2 ;$(((${FlipCoin[HH]}*100)/($user)))"`
 echo "Percentage of HH:" $HHPercentage
-TTPercentage=`echo "scale=2 ;(${FlipCoin[TT]}*100)/($user)" | bc -l`
+TTPercentage=`echo "scale=2 ;$(((${FlipCoin[TT]}*100)/($user)))"`
 echo "Percentage of TT:" $TTPercentage
-THPercentage=`echo "scale=2 ;(${FlipCoin[TH]}*100)/($user)" | bc -l`
+THPercentage=`echo "scale=2 ;$(((${FlipCoin[TH]}*100)/($user)))"`
 echo "Percentage of TH:" $THPercentage
-HTPercentage=`echo "scale=2 ;(${FlipCoin[HT]}*100)/($user)" | bc -l`
+HTPercentage=`echo "scale=2 ;$(((${FlipCoin[HT]}*100)/($user)))"`
 echo "Percentage of HT:" $HTPercentage
 }
 #LOGIC FOR TRIPLET FLIPCOIN
@@ -121,21 +121,21 @@ do
    echo "${key}:${FlipCoin[$key]}"
 done 
 #PRINTING PERCENTAGE OF DOUBLET FLIPING COIN
-HHHPercentage=`echo "scale=2 ;(${FlipCoin[HHH]}*100)/($user)" | bc -l`
+HHHPercentage=`echo "scale=2 ;$(((${FlipCoin[HHH]}*100)/($user)))"`
 echo "Percentage of HHH:" $HHHPercentage
-HHTPercentage=`echo "scale=2 ;(${FlipCoin[HHT]}*100)/($user)" | bc -l`
+HHTPercentage=`echo "scale=2 ;$(((${FlipCoin[HHT]}*100)/($user)))"`
 echo "Percentage of HHT:" $HHTPercentage
-HTTPercentage=`echo "scale=2 ;(${FlipCoin[HTT]}*100)/($user)" | bc -l`
+HTTPercentage=`echo "scale=2 ;$(((${FlipCoin[HTT]}*100)/($user)))"`
 echo "Percentage of HTT:" $HTTPercentage
-HTHPercentage=`echo "scale=2 ;(${FlipCoin[HTH]}*100)/($user)" | bc -l`
+HTHPercentage=`echo "scale=2 ;$(((${FlipCoin[HTH]}*100)/($user)))"`
 echo "Percentage of HTH:" $HTHPercentage
-TTTPercentage=`echo "scale=2 ;(${FlipCoin[TTT]}*100)/($user)" | bc -l`
+TTTPercentage=`echo "scale=2 ;$(((${FlipCoin[TTT]}*100)/($user)))"`
 echo "Percentage of TTT:" $TTTPercentage
-TTHPercentage=`echo "scale=2 ;(${FlipCoin[TTH]}*100)/($user)" | bc -l`
+TTHPercentage=`echo "scale=2 ;$(((${FlipCoin[TTH]}*100)/($user)))"`
 echo "Percentage of TTH:" $TTHPercentage
-THHPercentage=`echo "scale=2 ;(${FlipCoin[THH]}*100)/($user)" | bc -l`
+THHPercentage=`echo "scale=2 ;$(((${FlipCoin[THH]}*100)/($user)))"`
 echo "Percentage of THH:" $THHPercentage
-THTPercentage=`echo "scale=2 ;(${FlipCoin[THT]}*100)/($user)" | bc -l`
+THTPercentage=`echo "scale=2 ;$(((${FlipCoin[THT]}*100)/($user)))"`
 echo "Percentage of THT:" $THTPercentage
 }
 #USING FOR SORTING 
